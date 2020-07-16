@@ -1,5 +1,16 @@
-
 {{#let model.post as |post|}}
+<article class="rounded overflow-hidden shadow-lg">
+  {{#if post.image}}
+    <img class="w-full" src={{post.image}} alt={{post.title}}>
+  {{/if}}
+  <div class="px-6 py-4">
+    <div class="font-bold text-xl mb-2">{{post.title}}</div>
+    <p class="text-gray-700 text-base">
+      {{markdown-to-html post.content tagName=""}}
+    </p>
+  </div>
+</article>
+{{!--
 <article class="post-content {{post_class}} {{unless post.image 'no-image'}}">
 
     <header class="post-content-header">
@@ -17,19 +28,21 @@
     </div>
 
     <footer class="post-content-footer">
-
+      --}}
         {{!-- There are two options for how we display the byline/author-info.
         If the post has more than one author, we load a specific template
         from includes/byline-multiple.hbs, otherwise, we just use the
         default byline. --}}
-
+    {{!--
     </footer>
-
+    --}}
     {{!--
     <section class="post-content-comments">
         If you want to embed comments, this is a good place to do it!
     </section>
     --}}
 
+{{!--
 </article>
+--}}
 {{/let}}

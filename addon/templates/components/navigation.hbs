@@ -1,6 +1,6 @@
-<ul class="nav" role="menu">
+<ul class="flex" role="menu">
     {{#each blog.navigation as |navigation|}}
-      <li class="{{if (route-is navigation.route) 'nav-current'}}" role="menuitem">
+      <li class="{{if (route-is navigation.route) 'nav-current'}} mr-8" role="menuitem">
         {{#if navigation.id}}
           {{#link-to navigation.route navigation.id}} {{navigation.label}} {{/link-to}}
         {{else if navigation.route}}
