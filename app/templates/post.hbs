@@ -1,5 +1,5 @@
 {{#let model.post as |post|}}
-<article class="rounded overflow-hidden shadow-lg">
+<article class="rounded overflow-hidden shadow-lg w-2/3 block mx-auto">
   {{#if post.image}}
     <img class="w-full" src={{post.image}} alt={{post.title}}>
   {{/if}}
@@ -10,6 +10,7 @@
     </p>
   </div>
 </article>
+
 {{!--
 <article class="post-content {{post_class}} {{unless post.image 'no-image'}}">
 

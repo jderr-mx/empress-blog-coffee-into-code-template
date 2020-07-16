@@ -1,11 +1,10 @@
 {{!--
 Re-usable card for linking to posts
 --}}
-
 <article class="rounded overflow-hidden shadow-lg mt-4 {{if @post.image 'with-image' 'no-image'}}" style={{computedStyle}}>
-    {{#link-to 'post' @post.id}}
-        <div class="post-card-content p-2">
-            <h2 class="post-card-title">{{@post.title}}</h2>
-        </div>
-    {{/link-to}}
+  {{#link-to 'post' @post.id}}
+    <div class="post-card-content p-2">
+      <h2 class="post-card-title">{{@post.date}}{{@post.title}}</h2>
+    </div>
+  {{/link-to}}
 </article>
