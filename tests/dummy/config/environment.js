@@ -25,8 +25,8 @@ module.exports = function(environment) {
 
     blog: {
       title: 'empress-blog',
-      description: 'Static Blog System - Built with Ember',
-      coverImage: '/images/blog-cover.jpg',
+      description: 'Coffee Into Code',
+      logo: '/images/cic_logo.png',
 
       navigation: [{
         label: 'Home',
