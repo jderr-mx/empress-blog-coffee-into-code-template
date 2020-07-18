@@ -24,7 +24,7 @@ module.exports = function(environment) {
     },
 
     blog: {
-      title: 'empress-blog',
+      title: 'Coffee Into Code',
       description: 'Coffee Into Code',
       logo: '/images/cic_logo.png',
 

@@ -1,33 +1,18 @@
-<div class="container mx-auto">
+<div class="container mx-auto md:w-2/3">
   <header class="flex justify-center mt-4">
     <div class="flex items-center mb-8">
-        <img src="{{blog.logo}}" alt="{{blog.title}}" />
-        <nav class="ml-8 mt-4">
-          <Navigation />
-        </nav>
-    </div>
-    <div>
-      <div class="site-head-right">
-        <div class="social-links">
-          {{#if @site.facebook}}
-            <a href="{{facebook_url @site.facebook}}" title="Facebook" target="_blank" rel="noopener">Facebook</a>
-          {{/if}}
-          {{#if @site.twitter}}
-            <a href="{{twitter_url @site.twitter}}" title="Twitter" target="_blank" rel="noopener">Twitter</a>
-          {{/if}}
-          {{#if blog.host}}
-            <a href={{concat "https://feedly.com/i/subscription/feed/" (encode blog.host) '/rss.xml'}} title="RSS" target="_blank" rel="noopener">RSS</a>
-          {{/if}}
-        </div>
-      </div>
+      <img src="{{blog.logo}}" alt="{{blog.title}}" />
+      <nav class="ml-8 mt-4">
+        <Navigation />
+      </nav>
     </div>
   </header>
-  <main id="site-main" class="site-main mt-4 ">
+  <main id="site-main" class="mt-4 ">
     {{!-- All the main content gets inserted here, index.hbs, post.hbs, etc --}}
     {{outlet}}
   </main>
   {{!-- The footer at the very bottom of the screen --}}
-  <footer class="site-foot mt-4 flex justify-center">
-      &copy; {{date format="YYYY"}} {{#link-to 'index'}}{{blog.title}}{{/link-to}}
+  <footer class="my-4 flex justify-center font-bold text-sm text-gray-700">
+    <span class="mr-4">&copy;{{date format="YYYY"}}</span> {{#link-to 'index'}}{{blog.title}}{{/link-to}}
   </footer>
 </div>

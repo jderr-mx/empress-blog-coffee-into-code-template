@@ -8,7 +8,7 @@
 
 <div class="">
 {{#each (sort-by 'date:desc' model) as |post index|}}
-    {{!-- The tag below includes the markup for each post - partials/post-card.hbs --}}
-    <PostCard @post={{post}} @index={{index}}/>
+  {{!-- The tag below includes the markup for each post - partials/post-card.hbs --}}
+  <PostCard @post={{post}} @index={{index}}/>
 {{/each}}
 </div>
