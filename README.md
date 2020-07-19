@@ -1,8 +1,9 @@
 empress-blog-coffee-into-code-template
 ==============================================================================
 
-[Short description of the addon.]
+Empress theme for my site www.coffeeintocode.com
 
+Its a WIP
 
 Compatibility
 ------------------------------------------------------------------------------
