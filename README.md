@@ -24,7 +24,8 @@ ember install empress-blog-coffee-into-code-template
 Usage
 ------------------------------------------------------------------------------
 
-[Longer description of how to use the addon in apps.]
+Uses tailwindcss, you will need to install tailwindcss in your empress blog
+see [TailwindCSS Ember install](https://tailwindcss.com/docs/installation/#ember-js)
 
 
 Contributing
