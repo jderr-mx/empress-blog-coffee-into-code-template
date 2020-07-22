@@ -1,9 +1,4 @@
 {{#let model.post as |post|}}
-<meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:site" content="@johnderrdotnet">
-<meta name="twitter:title" content="{{post.title}}">
-<meta name="twitter:image" content="{{post.image}}">
-<meta name="twitter:image:alt" content="{{post.title}}">
 <article class="rounded overflow-hidden shadow-lg ">
   {{#if post.image}}
     <img class="w-full" src={{post.image}} alt={{post.title}}>
