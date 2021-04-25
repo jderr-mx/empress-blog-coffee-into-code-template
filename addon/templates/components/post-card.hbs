@@ -12,7 +12,7 @@ Re-usable card for linking to posts
         <img class="h-64 w-full object-cover mb-4" src="{{@post.image}}" />
       {{/if}}
       <p>
-        {{content-summary @post.content}}
+        {{this.contentSummary}}
       </p>
     </div>
     {{/link-to}}
